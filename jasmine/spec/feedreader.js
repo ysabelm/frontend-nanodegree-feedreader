@@ -62,7 +62,8 @@ $(function () {
          * hiding/showing of the menu element.
          */
         it('has the menu hidden', function () {
-            expect($('body').hasClass('menu-hidden')).toBe(true);
+            var body = document.querySelector('.body');
+            expect($(body).toHaveClass('menu-hidden'));
         });
 
         /* TODO: Write a test that ensures the menu changes
